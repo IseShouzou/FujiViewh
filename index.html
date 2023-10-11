@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height" >
+<title>Fuji View</title>
+<style type="text/css">
+
+html, body, .canvas{
+  //position: absolute;
+  //top : 0px;
+  //left: 0px;
+  width: 500px;
+  height: 300px;
+}
+
+@media screen and ( max-width: 480px) {
+  html, body, .canvas{
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Sliders{
+  position: absolute;
+  top : 20px;
+  left: 10px;
+}
+
+</style>
+
+<script type="text/javascript" src="GeomFunc.js"></script>
+<script type="text/javascript" src="MtFuji.js"></script>
+<script type="text/javascript" src="GlView.js"></script>
+<script type="text/javascript" src="Obje.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+<canvas class="canvas" id="canvas" ></canvas>
+<canvas class="canvas" id="canvas2" ></canvas>
+
+<div class="Sliders" >
+<pre  style="font-size: 2em;" >
+   0<input type="range" value = "0" min="0"    max="360" step="1" id="SliderAlpha">360 alpha</label><br>
+-180<input type="range" value = "0" min="-180" max="180" step="1" id="SliderBeta" >180 beta</label><br>
+ -90<input type="range" value = "0" min="-90"  max="90"  step="1" id="SliderGamma"> 90 gamma</label><br>
+</div>
+</pre>
+
+</body>
+
+</html>
